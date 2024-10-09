@@ -82,9 +82,17 @@ a {
   gap: 30px;
 }
 
-.nav a {
+.navLink {
   text-decoration: none;
   font-size: 18px;
+}
+
+.navLink:hover {
+  border-bottom: 2px solid var(--secondary-text-color);
+}
+
+.active {
+  border-bottom: 4px solid var(--primary-text-color);
 }
 /* Header CSS  Ends*/
 
