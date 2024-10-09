@@ -61,6 +61,10 @@ a {
   color: black;
 }
 
+.branding-color {
+  color: var(--primary-text-color);
+}
+
 /* Header CSS  Starts*/
 .header {
   display: flex;
@@ -80,18 +84,39 @@ a {
 
 .nav a {
   text-decoration: none;
+  font-size: 18px;
 }
 /* Header CSS  Ends*/
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 /* Main CSS Starts */
 
 main {
   flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0;
 }
+
+h1 {
+  text-align: center;
+  color: var(--primary-text-color);
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+hr {
+  margin: 40px 0;
+}
+
+main p {
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+.point-heading {
+  font-weight: 800;
+}
+
 /* Main CSS Ends */
 
 /* Footer CSS starts */
