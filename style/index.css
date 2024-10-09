@@ -73,15 +73,37 @@ main {
 /* Footer CSS starts */
 .footer {
   text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px -3px 3px;
+  padding: 20px;
+}
+
+.footer-heading {
+  font-size: 30px;
+  border-bottom: 3px solid var(--primary-text-color);
+  width: 25ch;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .footer-details p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5px;
 }
 
 .footer-details span {
   color: var(--primary-text-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer a {
+  border-bottom: 2px solid #fff;
+}
+
+footer a:hover {
+  border-bottom: 2px solid var(--primary-text-color);
 }
 /* Footer CSS ends */
