@@ -57,12 +57,36 @@ body {
   --secondary-text-color: #00963f;
 }
 
+a {
+  color: black;
+}
+
 /* Header CSS  Starts*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
 .logo {
   width: 100px;
 }
-/* Header CSS  Ends*/
 
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+}
+/* Header CSS  Ends*/
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* Main CSS Starts */
 
 main {
@@ -88,7 +112,6 @@ main {
 .footer-details p {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-bottom: 5px;
 }
 
@@ -107,3 +130,20 @@ footer a:hover {
   border-bottom: 2px solid var(--primary-text-color);
 }
 /* Footer CSS ends */
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    margin-right: 0;
+  }
+  .nav {
+    flex-direction: column;
+    margin-top: 5px;
+    gap: 2px;
+  }
+}
