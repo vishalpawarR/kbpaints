@@ -70,8 +70,9 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  padding: 10px 20px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 .logo {
   width: 100px;
@@ -103,7 +104,7 @@ main {
   flex: 1;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 30px 20px;
 }
 
 h1 {
@@ -131,29 +132,32 @@ main p {
 /* Footer CSS starts */
 .footer {
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.04) 0px -3px 3px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
   padding: 20px;
 }
 
 .footer-heading {
   font-size: 30px;
   border-bottom: 3px solid var(--primary-text-color);
-  width: 25ch;
+  max-width: 25ch;
   margin: 0 auto;
   margin-bottom: 20px;
 }
 
-.footer-details p {
+.footer-details div {
   display: flex;
   justify-content: center;
   margin-bottom: 5px;
 }
 
-.footer-details span {
-  color: var(--primary-text-color);
+.footer-details > div div {
   display: flex;
-  align-items: center;
   gap: 10px;
+}
+
+.footer-details div > span {
+  color: var(--primary-text-color);
 }
 
 footer a {
@@ -179,5 +183,11 @@ footer a:hover {
     flex-direction: column;
     margin-top: 5px;
     gap: 2px;
+  }
+  .footer-details > div {
+    flex-direction: column;
+  }
+  footer a:hover {
+    border-bottom: 2px solid #fff;
   }
 }
